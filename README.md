@@ -27,13 +27,11 @@ Each of the aims discussed above are associated with their specific FOSS lessons
 ├── AUTHORS.md
 ├── LICENSE
 ├── README.md
-├── bin                <- Your compiled model code can be stored here (not tracked by git)
-├── config             <- Configuration files, e.g., for doxygen or for your model if needed
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+├── code
+│   ├── src
+│   ├── tests_data     <- Data from third party sources used for testing.
+│   │   ├── csv
+│   │   ├── rwl        <- Data from third party sources.
 ├── docs               <- Documentation, e.g., doxygen or scientific papers (not tracked by git)
 ├── notebooks          <- Ipython or R notebooks
 ├── reports            <- For a manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
