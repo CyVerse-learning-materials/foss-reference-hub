@@ -40,6 +40,10 @@ COPY environment.yml example.ipynb /home/jovyan
 RUN mamba env create -f /home/jovyan/environment.yml && \
     mamba clean --all --yes
 
-RUN echo "source conda activate dplpy" >> ~/.bashrc
+RUN echo "conda activate dplpy" >> ~/.bashrc
+RUN source ~/.bashrc
+RUN python -m ipykernel install --user --name myenv --display-name "dplpy"
 
 EXPOSE 8888
+
+CMD ["jupyter", "lab"]
