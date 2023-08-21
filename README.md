@@ -29,9 +29,12 @@ Each of the aims discussed above are associated with their specific FOSS lessons
 ├── README.md
 ├── code
 │   ├── src
-│   ├── tests_data     <- Data from third party sources used for testing.
+│   │   ├── *.py                    <- Python files part of dplPy
+│   │   ├── execution_sample.ipynb  <- runnable example (executable Jupyter notebook)
+│   ├── Dockerfile                  <- Docker script in charge of container creation
+│   ├── tests_data                  <- Data from third party sources used for testing (in rwl and csv formats.
 │   │   ├── csv
-│   │   ├── rwl        <- Data from third party sources.
+│   │   ├── rwl        
 ├── docs               <- Documentation, e.g., doxygen or scientific papers (not tracked by git)
 ├── notebooks          <- Ipython or R notebooks
 ├── reports            <- For a manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
