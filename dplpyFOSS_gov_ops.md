@@ -8,6 +8,8 @@
     - [Project Overview and Objectives](#project-overview-and-objectives)
         - [dplPy](#dplpy)
         - [FOSS Reference Hub](#foss-reference-hub)
+    - [Our Team](#our-team)
+        - [Organizational Structure](#organizational-structure)
 2. [Operations](#operations)
 3. [Community Practices](#community-practices)
 4. [Attribution, Authorship, and Ownership](#attribution-authorship-and-ownership)
@@ -34,6 +36,21 @@ The dplPy project was selected to enhance the FOSS Reference Hub with a reliable
 The goals of the FOSS Reference Hub are to:
 - Serve as an exemplary reference for a well structured research object.
 - Guide FOSS attendees through weekly exercises designed to progressively enhance their project repositories.
+
+### Our Team
+
+- **Tyson Swetnam**: Co-PI of CyVerse and Director of Open Science, Institute for Computation and Data-enabled Insight (ICDI) at the University of Arizona
+- **Jeff Gillan**: Data Scientist for CyVerse with relative research in the field of GIS/remote sensing.
+- **Carlos Lizarraga**: Educator in Computational and Data Science at the University of Arizona Data Science Institute. Carlos' background is in applied research scientist as a Professor from the Physics Department at the University of Sonora, where he taught Computational Physics.
+- **Jason Williams**: Assistant Director, Diversity and Research Readiness at the 
+DNA Learning Center of Cold Spring Harbor.
+- **Michele Cosi**: Science Analyst for CyVerse with a background in genetics and genomics of rice.
+- **Tina Lee**: Head of User Engagement at CyVerse.
+
+With the collaboration of the dplPy team: Andy Bunn, Edward Cook, Kevin Anchukaitis, Ifeoluwa Ale
+
+#### Organizational Structure
+
 
 ## Operations
 ## Community Practices
