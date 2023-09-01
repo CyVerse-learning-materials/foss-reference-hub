@@ -1,0 +1,97 @@
+site_name: KEYS
+site_description: KEYS internship
+site_author: Ellie Dorland
+site_url: https://foss-reference-hub.github.io/
+
+# Repository
+repo_name: KEYS2023
+repo_url: https://github.com/CosiMichele/foss-reference-hub
+edit_uri: edit/main/docs/
+# Copyright
+copyright: 'Copyright &copy; 2023 - 2024 CyVerse'
+
+
+# Configuration
+theme:
+  name: material
+  highlightjs: true
+  font:
+    text: 'Open Sans'
+    code: 'Roboto Mono'
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    scheme: default
+    primary: black
+    accent: blue
+      
+  font:
+    text: Merriweather
+    code: Regular
+  logo: simple/circle
+  favicon: 'assets/favicon.ico'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+
+# Page tree
+nav:
+  - Home: index.md
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - mkdocs-jupyter:
+          include_source: True
+          ignore_h1_titles: True
