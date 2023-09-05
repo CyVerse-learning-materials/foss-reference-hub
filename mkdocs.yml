@@ -16,8 +16,18 @@ theme:
   name: material
   highlightjs: true
   font:
-    text: 'Open Sans'
-    code: 'Roboto Mono'
+    text: Poppins
+    code: Roboto Mono
+
+  # Features  
+  features:
+  - navigation.instant
+  - navigation.tracking
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.indexes
+  - navigation.top
+  - toc.follow
 
   # 404 page
   static_templates:
@@ -27,24 +37,24 @@ theme:
   include_search_page: false
   search_index_only: true
 
-  # Palette and theme
+  # Palette and theme (uses personalized colours)
   language: en
   palette:
-    scheme: default
-    primary: black
-    accent: blue      
-  font:
-    text: Montserrat
-    code: Regular
+    primary: custom
+    accent: custom
   icon:
-    logo: material/simple-circle
-  favicon: assets/favicon.png
+    logo: material/cogs
+  favicon: material/cogs
 
 # Page tree
 nav:
   - Home: index.md
+  - Data Managemen Plan: Data_Management_Plan.md
+  - Governance & Operations: Governance_Operations.md
+  - The openDendro Project: https://opendendro.org/
+  - FOSS Main Page: https://foss.cyverse.org/
 
-# Theme Extras (not needed atm)
+# Theme Extras
 extra_css:
   - stylesheets/extra.css
 

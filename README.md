@@ -27,24 +27,22 @@ Each of the aims discussed above are associated with their specific FOSS lessons
 ├── AUTHORS.md
 ├── LICENSE
 ├── README.md
+├── mkdocs.yml                      <- Governing file for website building
+├── requirements.txt                <- Requirements file for pip installation (required by website)
 ├── code
 │   ├── src
 │   │   ├── *.py                    <- Python files part of dplPy
-│   │   ├── execution_sample.ipynb  <- runnable example (executable Jupyter notebook)
+│   │   └── execution_sample.ipynb  <- runnable example (executable Jupyter notebook)
 │   ├── Dockerfile                  <- Docker script in charge of container creation
-│   ├── tests_data                  <- Data from third party sources used for testing (in rwl and csv formats.
-│   │   ├── csv
-│   │   ├── rwl        
-├── docs               <- Documentation, e.g., doxygen or scientific papers (not tracked by git)
-├── notebooks          <- Ipython or R notebooks
-├── reports            <- For a manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
-│   └── figures        <- Figures for the manuscript or reports
-└── src                <- Source code for this project
-    ├── data           <- scripts and programs to process data
-    ├── external       <- Any external source code, e.g., pull other git projects, or external libraries
-    ├── models         <- Source code for your own model
-    ├── tools          <- Any helper scripts go here
-    └── visualization  <- Scripts for visualisation of your results, e.g., matplotlib, ggplot2 related.
+│   └── tests_data                  <- Data from third party sources used for testing (in rwl and csv formats.
+│       ├── csv
+│       └── rwl        
+└── docs                            <- Documents
+    ├── assets                      <- Folder for images and additional graphic assets
+    ├── stylesheets                 <- Folder containing style-related code for the website
+    ├── index.md                    <- Main website home page
+    ├── Data_Management_Plan.md     <- Data Management Plan (example) applicable for this repository
+    └── Governance_Operations.md    <- Governance & Operations (example) file applicable for this repsitory
 ```
 ---
 
