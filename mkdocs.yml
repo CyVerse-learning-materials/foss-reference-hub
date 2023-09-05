@@ -1,10 +1,10 @@
-site_name: KEYS
-site_description: KEYS internship
+site_name: FOSS Reference Hub
+site_description: FOSS Reference Hub
 site_author: Ellie Dorland
 site_url: https://foss-reference-hub.github.io/
 
 # Repository
-repo_name: KEYS2023
+repo_name: FOSS Rerefence Hub
 repo_url: https://github.com/CosiMichele/foss-reference-hub
 edit_uri: edit/main/docs/
 # Copyright
