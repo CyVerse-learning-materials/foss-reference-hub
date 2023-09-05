@@ -1,6 +1,6 @@
 site_name: FOSS Reference Hub
 site_description: FOSS Reference Hub
-site_author: Ellie Dorland
+site_author: Michele Cosi
 site_url: https://foss-reference-hub.github.io/
 
 # Repository
@@ -23,24 +23,41 @@ theme:
   static_templates:
     - 404.html
 
-  # Don't include MkDocs' JavaScript
+  # Search feature
   include_search_page: false
   search_index_only: true
 
-  # Default values, taken from mkdocs_theme.yml
+  # Palette and theme
   language: en
   palette:
     scheme: default
     primary: black
-    accent: blue
-      
+    accent: blue      
   font:
-    text: Merriweather
+    text: Montserrat
     code: Regular
-  logo: simple/circle
-  favicon: 'assets/favicon.ico'
+  icon:
+    logo: material/simple-circle
+  favicon: assets/favicon.png
 
-# Extensions
+# Page tree
+nav:
+  - Home: index.md
+
+# Theme Extras (not needed atm)
+extra_css:
+  - stylesheets/extra.css
+
+# Extra Plugins
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - mkdocs-jupyter:
+          include_source: True
+          ignore_h1_titles: True
+
+# Extensions (leave as is)
 markdown_extensions:
   - admonition
   - abbr
@@ -79,19 +96,3 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  
-
-# Page tree
-nav:
-  - Home: index.md
-
-extra_css:
-  - stylesheets/extra.css
-
-plugins:
-    - search
-    - mkdocstrings
-    - git-revision-date
-    - mkdocs-jupyter:
-          include_source: True
-          ignore_h1_titles: True
