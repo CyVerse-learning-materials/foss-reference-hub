@@ -16,8 +16,8 @@ The repository aims to represent a well structured page for a research tool foll
 
 Each of the aims discussed above are associated with their specific FOSS lessons:
 
-- [Project Management](https://foss.cyverse.org/02_project_management/)
 - [Managing Data](https://foss.cyverse.org/03_managing_data/)
+- [Project Management](https://foss.cyverse.org/02_project_management/)
 - [Documentation and Communication](https://foss.cyverse.org/04_documentation_communication/)
 - [Version Control](https://foss.cyverse.org/05_version_control/)
 - [Reproducibility](https://foss.cyverse.org/06_reproducibility_i/)
