@@ -1,10 +1,10 @@
 site_name: FOSS Reference Hub
 site_description: FOSS Reference Hub
 site_author: Michele Cosi
-site_url: https://foss-reference-hub.github.io/
+site_url: https://cyverse-learning-materials.github.io/foss-reference-hub
 
 # Repository
-repo_name: FOSS Rerefence Hub
+repo_name: FOSS Reference Hub
 repo_url: https://github.com/CyVerse-learning-materials/foss-reference-hub
 edit_uri: edit/main/docs/
 # Copyright
@@ -16,8 +16,8 @@ theme:
   name: material
   highlightjs: true
   font:
-    text: Poppins
-    code: Roboto Mono
+    text: Roboto
+    code: Regular
 
   # Features  
   features:
@@ -49,6 +49,9 @@ theme:
 # Page tree
 nav:
   - Home: index.md
+  - Codebase: 
+      Installation and Requirements: installation.md
+      User Manual: manual.md
   - Data Managemen Plan: Data_Management_Plan.md
   - Governance & Operations: Governance_Operations.md
   - The openDendro Project: https://opendendro.org/
@@ -78,6 +81,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      title: On this page
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
