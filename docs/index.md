@@ -39,10 +39,12 @@ Each of the aims discussed above are associated with their specific FOSS lessons
 │   └── tests_data                  <- Data from third party sources used for testing (in rwl and csv formats.
 │       ├── csv
 │       └── rwl        
-└── docs                            <- Documents
+└── docs                           
     ├── assets                      <- Folder for images and additional graphic assets
     ├── stylesheets                 <- Folder containing style-related code for the website
     ├── index.md                    <- Main website home page
+    ├── installation.md             <- Installation steps for dplPy
+    ├── manual.md                   <- Manual for dplPy
     ├── Data_Management_Plan.md     <- Data Management Plan (example) applicable for this repository
     └── Governance_Operations.md    <- Governance & Operations (example) file applicable for this repsitory
 ```
