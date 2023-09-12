@@ -49,12 +49,8 @@ theme:
 # Page tree
 nav:
   - Home: index.md
-  - Codebase: 
-      Installation and Requirements: installation.md
-      User Manual: manual.md
   - Data Managemen Plan: Data_Management_Plan.md
   - Governance & Operations: Governance_Operations.md
-  - The openDendro Project: https://opendendro.org/
   - FOSS Main Page: https://foss.cyverse.org/
 
 # Theme Extras
