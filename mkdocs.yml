@@ -6,9 +6,9 @@ site_url:
 # Repository
 repo_name: 
 repo_url: 
-edit_uri: 
+edit_uri: edit/main/docs/
 # Copyright
-copyright: 
+copyright: 'Copyright &copy; 2023 - 2024 <your name>'
 
 
 # Configuration
