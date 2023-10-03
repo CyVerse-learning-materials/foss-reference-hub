@@ -1,14 +1,14 @@
-site_name: FOSS Reference Hub
-site_description: FOSS Reference Hub
-site_author: Michele Cosi
-site_url: https://cyverse-learning-materials.github.io/foss-reference-hub
+site_name: 
+site_description: 
+site_author: 
+site_url: 
 
 # Repository
-repo_name: FOSS Reference Hub
-repo_url: https://github.com/CyVerse-learning-materials/foss-reference-hub
-edit_uri: edit/main/docs/
+repo_name: 
+repo_url: 
+edit_uri: 
 # Copyright
-copyright: 'Copyright &copy; 2023 - 2024 CyVerse'
+copyright: 
 
 
 # Configuration
@@ -49,13 +49,6 @@ theme:
 # Page tree
 nav:
   - Home: index.md
-  - Codebase: 
-      Installation and Requirements: installation.md
-      User Manual: manual.md
-  - Data Managemen Plan: Data_Management_Plan.md
-  - Governance & Operations: Governance_Operations.md
-  - The openDendro Project: https://opendendro.org/
-  - FOSS Main Page: https://foss.cyverse.org/
 
 # Theme Extras
 extra_css:
