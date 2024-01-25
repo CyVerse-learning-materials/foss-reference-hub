@@ -1,6 +1,6 @@
 # The FOSS Reference Hub   
 
-This GitHub page is a reference and companion repository to the [FOSS 2023 course](https://foss.cyverse.org/).
+This GitHub page is a reference and companion repository to the [FOSS course](https://foss.cyverse.org/).
 
 ## Objective
 
