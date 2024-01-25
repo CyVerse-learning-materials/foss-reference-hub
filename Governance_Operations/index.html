@@ -1,0 +1,1185 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FOSS Reference Hub">
+      
+      
+        <meta name="author" content="Michele Cosi">
+      
+      
+        <link rel="canonical" href="https://cyverse-learning-materials.github.io/foss-reference-hub/Governance_Operations/">
+      
+      
+        <link rel="prev" href="../Data_Management_Plan/">
+      
+      
+      
+      <link rel="icon" href="../material/cogs">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
+    
+    
+      
+        <title>Governance & Operations - FOSS Reference Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dplpy-for-foss-governance-and-operations-document" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FOSS Reference Hub" class="md-header__button md-logo" aria-label="FOSS Reference Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.9 18.45c1.35 0 2.45-1.1 2.45-2.45s-1.1-2.45-2.45-2.45c-1.36 0-2.45 1.1-2.45 2.45s1.09 2.45 2.45 2.45m5.2-1.77 1.48 1.16c.13.11.17.29.08.45l-1.4 2.42a.35.35 0 0 1-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.27 1.85c-.02.17-.17.3-.34.3h-2.8c-.18 0-.32-.13-.35-.3l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.75.7c-.15.06-.34 0-.42-.15l-1.4-2.42a.351.351 0 0 1 .08-.45l1.48-1.16-.05-.68.05-.69-1.48-1.15a.353.353 0 0 1-.08-.45l1.4-2.42c.08-.16.27-.22.42-.16l1.75.71c.36-.28.75-.52 1.18-.69l.26-1.86c.03-.16.17-.29.35-.29h2.8c.17 0 .32.13.34.29l.27 1.86c.42.17.82.41 1.18.69l1.74-.71c.17-.06.34 0 .43.16l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.15.05.69-.05.68M6.69 8.07c.87 0 1.57-.7 1.57-1.57 0-.87-.7-1.58-1.57-1.58A1.58 1.58 0 0 0 5.11 6.5c0 .87.71 1.57 1.58 1.57m3.34-1.13.97.74c.07.07.09.19.03.29l-.9 1.56c-.05.1-.17.14-.27.1l-1.12-.45-.74.44-.19 1.19c-.02.11-.11.19-.22.19h-1.8c-.12 0-.21-.08-.23-.19L5.4 9.62l-.76-.44-1.14.45c-.09.04-.2 0-.26-.1l-.9-1.56c-.06-.1-.03-.22.05-.29l.95-.74-.03-.44.03-.44-.95-.74a.229.229 0 0 1-.05-.29l.9-1.56c.06-.1.17-.14.26-.1l1.13.45.77-.44.16-1.19c.02-.11.11-.19.23-.19h1.8c.11 0 .2.08.22.19L8 3.38l.74.44 1.12-.45c.1-.04.22 0 .27.1l.9 1.56c.06.1.04.22-.03.29l-.97.74.03.44-.03.44Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FOSS Reference Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Governance & Operations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/foss-reference-hub" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FOSS Reference Hub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../installation/" class="md-tabs__link">
+          
+  
+    
+  
+  Codebase
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Data_Management_Plan/" class="md-tabs__link">
+        
+  
+    
+  
+  Data Managemen Plan
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Governance & Operations
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://opendendro.org/" class="md-tabs__link">
+        
+  
+    
+  
+  The openDendro Project
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://foss.cyverse.org/" class="md-tabs__link">
+        
+  
+    
+  
+  FOSS Main Page
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="FOSS Reference Hub" class="md-nav__button md-logo" aria-label="FOSS Reference Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.9 18.45c1.35 0 2.45-1.1 2.45-2.45s-1.1-2.45-2.45-2.45c-1.36 0-2.45 1.1-2.45 2.45s1.09 2.45 2.45 2.45m5.2-1.77 1.48 1.16c.13.11.17.29.08.45l-1.4 2.42a.35.35 0 0 1-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.27 1.85c-.02.17-.17.3-.34.3h-2.8c-.18 0-.32-.13-.35-.3l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.75.7c-.15.06-.34 0-.42-.15l-1.4-2.42a.351.351 0 0 1 .08-.45l1.48-1.16-.05-.68.05-.69-1.48-1.15a.353.353 0 0 1-.08-.45l1.4-2.42c.08-.16.27-.22.42-.16l1.75.71c.36-.28.75-.52 1.18-.69l.26-1.86c.03-.16.17-.29.35-.29h2.8c.17 0 .32.13.34.29l.27 1.86c.42.17.82.41 1.18.69l1.74-.71c.17-.06.34 0 .43.16l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.15.05.69-.05.68M6.69 8.07c.87 0 1.57-.7 1.57-1.57 0-.87-.7-1.58-1.57-1.58A1.58 1.58 0 0 0 5.11 6.5c0 .87.71 1.57 1.58 1.57m3.34-1.13.97.74c.07.07.09.19.03.29l-.9 1.56c-.05.1-.17.14-.27.1l-1.12-.45-.74.44-.19 1.19c-.02.11-.11.19-.22.19h-1.8c-.12 0-.21-.08-.23-.19L5.4 9.62l-.76-.44-1.14.45c-.09.04-.2 0-.26-.1l-.9-1.56c-.06-.1-.03-.22.05-.29l.95-.74-.03-.44.03-.44-.95-.74a.229.229 0 0 1-.05-.29l.9-1.56c.06-.1.17-.14.26-.1l1.13.45.77-.44.16-1.19c.02-.11.11-.19.23-.19h1.8c.11 0 .2.08.22.19L8 3.38l.74.44 1.12-.45c.1-.04.22 0 .27.1l.9 1.56c.06.1.04.22-.03.29l-.97.74.03.44-.03.44Z"/></svg>
+
+    </a>
+    FOSS Reference Hub
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/foss-reference-hub" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FOSS Reference Hub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Codebase
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Codebase
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation and Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Manual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data_Management_Plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Managemen Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Governance & Operations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Governance & Operations
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-overview-and-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Overview and Objectives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Overview and Objectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dplpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      dplPy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foss-reference-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOSS Reference Hub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#our-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Our Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Our Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizational-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-science-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Science Commitment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#land-acknowledgement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Land Acknowledgement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diversity-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diversity Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-of-conduct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code of Conduct
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribution-authorship-and-ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attribution, Authorship, and Ownership
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://opendendro.org/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The openDendro Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://foss.cyverse.org/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FOSS Main Page
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-overview-and-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Overview and Objectives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Overview and Objectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dplpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      dplPy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foss-reference-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOSS Reference Hub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#our-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Our Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Our Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizational-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-science-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Science Commitment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#land-acknowledgement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Land Acknowledgement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diversity-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diversity Statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-of-conduct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code of Conduct
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribution-authorship-and-ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attribution, Authorship, and Ownership
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="dplpy-for-foss-governance-and-operations-document">dplPy-for-FOSS Governance and Operations Document<a class="headerlink" href="#dplpy-for-foss-governance-and-operations-document" title="Permanent link">&para;</a></h1>
+<p><em>This is a living document. Changes are expected throughout the life of the project.</em></p>
+<h3 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="#introduction">Introduction</a><ul>
+<li><a href="#project-overview-and-objectives">Project Overview and Objectives</a><ul>
+<li><a href="#dplpy">dplPy</a></li>
+<li><a href="#foss-reference-hub">FOSS Reference Hub</a></li>
+</ul>
+</li>
+<li><a href="#our-team">Our Team</a><ul>
+<li><a href="#organizational-structure">Organizational Structure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#operations">Operations</a><ul>
+<li><a href="#communications">Communications</a></li>
+<li><a href="#procedures">Procedures</a></li>
+</ul>
+</li>
+<li><a href="#community-practices">Community Practices</a><ul>
+<li><a href="#open-science-commitment">Open Science Commitment</a></li>
+<li><a href="#land-acknowledgement">Land Acknowledgement</a></li>
+<li><a href="#diversity-statement">Diversity Statement</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+</ul>
+</li>
+<li><a href="#attribution-authorship-and-ownership">Attribution, Authorship, and Ownership</a></li>
+</ol>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This Project Governance document defines operating procedures and rules aimed to clarify and support the involvement of dplPy in FOSS and the FOSS reference hub.</p>
+<h3 id="project-overview-and-objectives">Project Overview and Objectives<a class="headerlink" href="#project-overview-and-objectives" title="Permanent link">&para;</a></h3>
+<p>This section highights the dplPy project on its own and its implementation in the FOSS Reference Hub.</p>
+<h4 id="dplpy">dplPy<a class="headerlink" href="#dplpy" title="Permanent link">&para;</a></h4>
+<p><a href="https://opendendro.org/python/">dplPy</a> is the Python implementation of the <a href="https://opendendro.org/">OpenDendro</a> project, an open-source framework that aims to provide <a href="https://en.wikipedia.org/wiki/Dendrochronology">dendrochronologists</a> with the required analytical software necessary for tree-ring related research. The majority of the code for dplPy was developed by Ifeoluwa Ale, a student Computer Scienctist at the University of Arizona, and supervised by Michele Cosi, Dr. Tyson Swetnam, and Dr. Kevin Anchukaitis. OpenDendro is supervised by Dr. Kevin Anchukaitis, Andy Bunn, Dr. Tyson Swetnam and Dr. Edward Cook.</p>
+<h4 id="foss-reference-hub">FOSS Reference Hub<a class="headerlink" href="#foss-reference-hub" title="Permanent link">&para;</a></h4>
+<p>The FOSS reference hub is a reference repository for the <a href="https://foss.cyverse.org/">Foundational Open Science Skills (FOSS)</a> workshop series. Together with dplPy, the aim of this repository is to serve as a reference for the <a href="https://foss.cyverse.org/final_project/overview/">capstone</a>, which FOSS attendees are expected to complete within the duration of the FOSS workshop.</p>
+<p>The dplPy project was selected to enhance the FOSS Reference Hub with a reliable codebase, ensuring it mirrors a genuine repository that participants can use as a model when attempting to replicate similar setups for their individual projects.</p>
+<p>The goals of the FOSS Reference Hub are to:
+- Serve as an exemplary reference for a well structured research object.
+- Guide FOSS attendees through weekly exercises designed to progressively enhance their project repositories.</p>
+<h3 id="our-team">Our Team<a class="headerlink" href="#our-team" title="Permanent link">&para;</a></h3>
+<p>Meet the education team at CyVerse/Data Science Institute:</p>
+<ul>
+<li><strong>Tyson Swetnam</strong>: Co-PI of CyVerse and Director of Open Science, Institute for Computation and Data-enabled Insight (ICDI) at the University of Arizona</li>
+<li><strong>Jeff Gillan</strong>: Data Scientist for CyVerse with relative research in the field of GIS/remote sensing.</li>
+<li><strong>Carlos Lizarraga</strong>: Educator in Computational and Data Science at the University of Arizona Data Science Institute. Carlos' background is in applied research scientist as a Professor from the Physics Department at the University of Sonora, where he taught Computational Physics.</li>
+<li><strong>Michele Cosi</strong>: Science Analyst for CyVerse with a background in genetics and genomics of rice.</li>
+<li><strong>Tina Lee</strong>: Head of User Engagement at CyVerse.</li>
+</ul>
+<p>With the collaboration of the dplPy team: </p>
+<ul>
+<li><strong>Andy Bunn</strong>: Environmental scientist interested in climate and energy from the College of Environment at Western Washington University, founding director of the Institute for Energy Studies, and main writer of OpenDendro software <a href="https://cran.r-project.org/web/packages/dplR/index.html">dplR</a> and <a href="https://andybunn.shinyapps.io/xDateR/">xDateR</a>. </li>
+<li><strong>Edward Cook</strong>: expert in the dendrochronology field and main writer of the tool <a href="https://www.ltrr.arizona.edu/~sheppard/presession/arsreadme_135.doc">ARSTAN</a>. </li>
+<li><strong>Kevin Anchukaitis</strong>: Climate scientist, paleoclimatologist, dendrochronologist, faculty member  in Geosciences and the Laboratory of Tree-Ring Research at the University of Arizona, leading the efforts behind the <a href="https://opendendro.org/">OpenDendro</a> platform.</li>
+<li><strong>Ifeuwa Ale</strong>: Junior Computer Science student at the University of Arizona and main contributor to the dplPy codebase for OpenDendro.</li>
+</ul>
+<p>FOSS will also be hosting the following guest speakers:</p>
+<ul>
+<li><a href="https://dnalc.cshl.edu/about/staff-bio.html#williams"><strong>Jason Williams</strong></a>: Assistant Director, Diversity and Research Readiness at the 
+DNA Learning Center of Cold Spring Harbor.</li>
+<li><strong>Wade Bishop</strong>: Professor in the School of Information Sciences at the University of Tennessee-Knoxville. He is the Director of Graduate Studies as well as the Research Data Management Certificate Coordinator</li>
+</ul>
+<h4 id="organizational-structure">Organizational Structure<a class="headerlink" href="#organizational-structure" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>FOSS
+├── CyVerse/Data Science Institute
+│   ├── Tyson Swetnam 
+│   ├── Jeff Gillan
+│   ├── Carlos Lizarraga
+│   ├── Tina Lee
+│   └── Michele Cosi
+├── FOSS Reference Hub
+│   └── dplPy
+│        ├── Kevin Anchukaitis
+│        ├── Edward Cook
+│        ├── Andy Bunn
+│        └── Ifeuwa Ale
+└── Guest Speakers
+    ├── Jason Williams
+    └── Wade Bishop
+</code></pre></div>
+<h2 id="operations">Operations<a class="headerlink" href="#operations" title="Permanent link">&para;</a></h2>
+<p>In order to ensure well distributed work loads across FOSS and the FOSS teaching materials including the FOSS Reference Hub, we have outlined communications and procedure components in order to maximize effectiveness and efficiency.</p>
+<h3 id="communications">Communications<a class="headerlink" href="#communications" title="Permanent link">&para;</a></h3>
+<p><strong>Internal communications</strong>: communications within the CyVerse/Data Science Institute team is carried out through private Slack channels (CyVerse, CyVerseLearning, Data7) and Zoom meetings.</p>
+<p><strong>External communications</strong>: communications to the dplPy team is carried out through a private Slack channel (openDendro), whilst communication to the guest speakers is done through email (Wade Bishop) and the CyVerse/CyverseLearning Slack Channel (Jason Williams).</p>
+<p><strong>Note keeping &amp; attendees</strong>: communications to FOSS attendees is achieved through the CyVerseLearning Slack channel. This will allow attendees to share thoughts and notes on lectures and materials during and after the workshop. Note keeping during the workshop is carried out through <a href="https://hackmd.io/">HackMD</a>, which links are shared during the workshop sessions. All workshops will be done through Zoom, creating a virtual classroom environment allowing remote attendees to take part to the workshop. Recordings of these workshop sessions will be made available to attendees through a private YouTube playlist. </p>
+<h3 id="procedures">Procedures<a class="headerlink" href="#procedures" title="Permanent link">&para;</a></h3>
+<p>All of the code base required for FOSS, the FOSS Reference Hub and the dplPy project is stored in their respective GitHub repositories:</p>
+<ul>
+<li><a href="https://github.com/CyVerse-learning-materials/foss">FOSS</a></li>
+<li><a href="https://github.com/CosiMichele/foss-reference-hub">FOSS Reference Hub</a></li>
+<li><a href="https://github.com/OpenDendro/dplPy">dplPy</a> </li>
+</ul>
+<p>All of these repositories can only be modified by the CyVerse/Data Science Institute team (or the dplPy team regarding the dplPy repository) or through a reviewed <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull request</a>. Websites for FOSS (<a href="https://foss.cyverse.org/">foss.cyverse.org</a>) and OpenDendro (<a href="https://opendendro.org/">opendendro.org</a>) are created using <a href="https://squidfunk.github.io/mkdocs-material/">MkDocs-Material</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>, built through automated <a href="https://github.com/features/actions">GitHub Actions</a>.</p>
+<h2 id="community-practices">Community Practices<a class="headerlink" href="#community-practices" title="Permanent link">&para;</a></h2>
+<h3 id="open-science-commitment">Open Science Commitment<a class="headerlink" href="#open-science-commitment" title="Permanent link">&para;</a></h3>
+<p>We are committed to Open Science as we operate through transparency, collaboration, and accessibility, guided by the<a href="https://www.nature.com/articles/sdata201618">FAIR (Findable, Accessible, Interoperable, Reusable)</a> and <a href="https://www.gida-global.org/care">CARE (Collective Benefit, Accountability, Responsibility, Equity)</a> principles.</p>
+<p>Our educational materials and publications are thoughtfully curated to align with Open Science ideals. We seek to empower others to adopt and implement Open Science practices, making research more accessible and reproducible.</p>
+<h3 id="land-acknowledgement">Land Acknowledgement<a class="headerlink" href="#land-acknowledgement" title="Permanent link">&para;</a></h3>
+<p>As part of the University of Arizona, we acknowledge and respect the land and territories on which we are able to perform our duties as educators with the following statement: <em>We respectfully acknowledge the University of Arizona is on the land and territories of Indigenous peoples. Today, Arizona is home to 22 federally recognized tribes, with Tucson being home to the O’odham and the Yaqui. Committed to diversity and inclusion, the University strives to build sustainable relationships with sovereign Native Nations and Indigenous communities through education offerings, partnerships, and community service.</em></p>
+<h3 id="diversity-statement">Diversity Statement<a class="headerlink" href="#diversity-statement" title="Permanent link">&para;</a></h3>
+<p>We encourage everyone to participate and are committed to building a community for all. 
+Although we will fail attimes, we seek to treat everyone as fairly and equally as possible. Whenever a participant has made a mistake, we expect them to take responsibility for it. If someone has been harmed or offended, if you are a witness to an event of this nature, it is your responsibility to both listen carefully and respectfully to the victims, as well as to take action to bring attention to the behaviour, and to make every effort to stop the behaviour. </p>
+<p>It is also our responsibility to do our best to right the wrong. 
+Although this list cannot be exhaustive, we explicitly honor diversity in age, gender, gender identity or expression, culture, ethnicity, language, national origin, political beliefs, profession, race, religion, sexual orientation, socioeconomic status, and technical ability. We will not tolerate discrimination based on any of the protected characteristics above, including participants with disabilities.</p>
+<h3 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">&para;</a></h3>
+<p>In conjunction with for using CyVerse cyberinfrastructure, this Code of Conduct applies to all Event participants and their activities while using CyVerse resources and/or attending the Event.</p>
+<p>CyVerse is dedicated to providing professional computational research and educational experiences for all of our users, regardless of domain focus, academic status, educational level, gender/gender identity/expression, age, sexual orientation, mental or physical ability, physical appearance, body size, race, ethnicity, religion (or lack thereof), technology choices, dietary preferences, or any other personal characteristic.</p>
+<p>When using CyVerse or participating at an Event, we expect you to:</p>
+<p>Interact with others and use CyVerse professionally and ethically by complying with our Policies.
+Constructively critize ideas and processes, not people.
+Follow the Golden Rule (treat others as you want to be treated) when interacting online or in-person with collaborators, trainers, and support staff.
+Comply with this Code in spirit as much as the letter, as it is neither exhaustive nor complete in identifying any and all possible unacceptable conduct.
+We do not tolerate harassment of other users or staff in any form (including, but not limited to, violent threats or language, derogatory language or jokes, doxing, insults, advocating for or encouraging any of these behaviors). Sexual language and imagery are not appropriate at any time (excludes Protected Health Information in compliance with HIPAA). Any user violating this Code may be expelled from the platform and the workshop at CyVerse's sole discretion without warning.</p>
+<p>To report a violation of this Code, directly message a trainer via Slack or email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;">&#105;&#110;&#102;&#111;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;</a> with the following information:</p>
+<p>Your contact information
+Names (real, username, pseudonyms) of any individuals involved, and or witness(es) if any.
+Your account of what occurred and if the incident is ongoing. If there is a publicly available record (a tweet, public chat log, etc.), please include a link or attachment.
+Any additional information that may be helpful in resolving the issue.</p>
+<h2 id="attribution-authorship-and-ownership">Attribution, Authorship, and Ownership<a class="headerlink" href="#attribution-authorship-and-ownership" title="Permanent link">&para;</a></h2>
+<p>FOSS teaching materials and FOSS Reference Hub are made available under the CC BY 4.0 License: <a href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a>.</p>
+<p>dplPy and OpenDendro are made available under the GNU General Public Licence v3.0: <a href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a></p>
+<p>We kindly ask to respect the Licences by which this material is developed.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    2024-01-24
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 - 2024 CyVerse
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      
+    
+  </body>
+</html>
